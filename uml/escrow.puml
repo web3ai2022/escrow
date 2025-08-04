@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+autonumber
+Actor buyer
+
+buyer -> Contract: 支付
+
+Actor seller
+seller -> Contract: 发货
+buyer -> Contract: 收货确认
+
+Actor arbitrator
+arbitrator -> Contract: 同意支付
+arbitrator -> Contract: 同意退款
+
+@enduml
